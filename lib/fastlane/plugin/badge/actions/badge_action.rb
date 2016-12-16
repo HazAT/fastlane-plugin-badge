@@ -2,7 +2,22 @@ module Fastlane
   module Actions
     class BadgeAction < Action
       def self.run(params)
-        UI.message("The badge plugin is working!")
+        Actions.verify_gem!('badge')
+        
+        options = {
+          dark: params[:dark],
+          custom: params[:custom],
+          no_badge: params[:no_badge],
+          shield: params[:shield],
+          alpha: params[:alpha],
+          shield_io_timeout: params[:shield_io_timeout],
+          glob: params[:glob],
+          alpha_channel: params[:alpha_channel],
+          shield_gravity: params[:shield_gravity],
+          shield_no_resize: params[:shield_no_resize]
+        }
+        
+        Helper::BadgeHelper.run(options)
       end
 
       def self.description
@@ -27,9 +42,7 @@ module Fastlane
       end
 
       def self.available_options
-        require 'badge'
-        puts Badge::Options.available_options
-        []
+        Helper::BadgeHelper.available_options
       end
 
       def self.is_supported?(platform)

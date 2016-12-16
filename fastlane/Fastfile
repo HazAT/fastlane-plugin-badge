@@ -1,3 +1,11 @@
 lane :test do
   badge
 end
+
+lane :dark do
+  badge(dark: true)
+end
+
+lane :shield do
+  badge(shield: "Version-0.0.3-blue", no_badge: true)
+end

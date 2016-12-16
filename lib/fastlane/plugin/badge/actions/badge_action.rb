@@ -45,6 +45,15 @@ module Fastlane
         Helper::BadgeHelper.available_options
       end
 
+      def self.example_code
+        [
+          'badge(dark: true)',
+          'badge(alpha: true)',
+          'badge(custom: "/Users/xxx/Desktop/badge.png")',
+          'badge(shield: "Version-0.0.3-blue", no_badge: true)'
+        ]
+      end
+
       def self.is_supported?(platform)
         [:ios, :mac, :android].include?(platform)
       end

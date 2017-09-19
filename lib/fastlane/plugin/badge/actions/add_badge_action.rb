@@ -1,6 +1,6 @@
 module Fastlane
   module Actions
-    class BadgeAction < Action
+    class AddBadgeAction < Action
       def self.run(params)
         Actions.verify_gem!('badge')
 
@@ -27,7 +27,7 @@ module Fastlane
       end
 
       def self.authors
-        ["Daniel Griesser", "HazAT"]
+        ["HazAT"]
       end
 
       def self.return_value
@@ -49,10 +49,10 @@ module Fastlane
 
       def self.example_code
         [
-          'badge(dark: true)',
-          'badge(alpha: true)',
-          'badge(custom: "/Users/xxx/Desktop/badge.png")',
-          'badge(shield: "Version-0.0.3-blue", no_badge: true)'
+          'add_badge(dark: true)',
+          'add_badge(alpha: true)',
+          'add_badge(custom: "/Users/xxx/Desktop/badge.png")',
+          'add_badge(shield: "Version-0.0.3-blue", no_badge: true)'
         ]
       end
 

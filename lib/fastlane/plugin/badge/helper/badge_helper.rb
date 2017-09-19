@@ -3,7 +3,7 @@ module BadgeBridge
   class Bridge
     def self.available_options
       require 'badge'
-       Badge::Options.available_options
+      Badge::Options.available_options
     end
 
     def self.run(options)

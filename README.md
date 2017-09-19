@@ -1,4 +1,8 @@
-# badge plugin
+# fastlane plugin for badge
+
+https://github.com/HazAT/badge
+
+---
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-badge)
 
@@ -33,7 +37,7 @@ rubocop -a
 
 ## Issues and Feedback
 
-For any other issues and feedback about this plugin, please submit it to this repository.
+https://github.com/HazAT/badge/issues
 
 ## Troubleshooting
 

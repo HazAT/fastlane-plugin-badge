@@ -10,7 +10,7 @@ module Fastlane
           no_badge: params[:no_badge],
           shield: params[:shield],
           alpha: params[:alpha],
-          shield_service_timeout: params[:shield_service_timeout],
+          shield_io_timeout: params[:shield_io_timeout],
           glob: params[:glob],
           alpha_channel: params[:alpha_channel],
           shield_gravity: params[:shield_gravity],

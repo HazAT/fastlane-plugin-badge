@@ -3,7 +3,7 @@ lane :test do
 end
 
 lane :dark do
-  add_badge(dark: true)
+  add_badge(dark: true, grayscale: true)
 end
 
 lane :shield do

@@ -3,23 +3,7 @@ module Fastlane
     class AddBadgeAction < Action
       def self.run(params)
         Actions.verify_gem!('badge')
-
-        options = {
-          dark: params[:dark],
-          custom: params[:custom],
-          no_badge: params[:no_badge],
-          shield: params[:shield],
-          alpha: params[:alpha],
-          shield_io_timeout: params[:shield_io_timeout],
-          glob: params[:glob],
-          alpha_channel: params[:alpha_channel],
-          shield_gravity: params[:shield_gravity],
-          shield_no_resize: params[:shield_no_resize],
-          shield_geometry: params[:shield_geometry],
-          shield_scale: params[:shield_scale],
-        }
-
-        Helper::BadgeHelper.run(options)
+        Helper::BadgeHelper.run(params)
       end
 
       def self.description

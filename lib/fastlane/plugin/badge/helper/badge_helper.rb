@@ -7,7 +7,8 @@ module BadgeBridge
     end
 
     def self.run(options)
-      Badge::Runner.new.run('.', options)
+      path = options.fetch(:path) { "." }
+      Badge::Runner.new.run(path, options)
     end
   end
 end
